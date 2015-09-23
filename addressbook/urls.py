@@ -18,6 +18,6 @@ from django.contrib import admin
 import contacts.views
 
 urlpatterns = [
-    url(r'^$', include("contacts.urls")),
+    url(r'^contacts/', include('contacts.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
